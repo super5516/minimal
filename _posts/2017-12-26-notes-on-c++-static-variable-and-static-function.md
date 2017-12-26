@@ -50,3 +50,6 @@ int main (void) {
   Book::getCounter(); // it's ok
 }
 ```
+
+_Questions unsolved_
+- What's the meaning of a normal static function? If it has the exact functionality of a normal function, could we omit it?
