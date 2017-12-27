@@ -5,15 +5,23 @@ date: 2017-12-26 20:00 +0800
 categories:
 ---
 
-Static variable is a variable that cannot be changed after initialization.
+Static variable is a variable like global variable, except that it can only be accessed within the proper scope.
 
 Example:
 ``` c++
-static int s_i = 10;
-s_i = 20; // this would cause a compile error
+void incCounter() {
+  static int counter = 0;
+  counter++;
+}
+
+int main (void) {
+  incCounter(); // counter = 1
+  incCounter(); // counter = 2
+  counter++; // compile error
+}
 ```
 
-Static variable in a class has the same characteristic as the normal static variable, plus that it's shared by all the instances of that class.
+Static member variable (static variable in a class) has the same characteristic as the normal static variable, plus that it's shared by all the instances of that class.
 
 Example:
 ``` c++
@@ -33,7 +41,7 @@ int main (void) {
 }
 ```
 
-Static function in a class is a function that could be called without any instance.
+Static member function (static function in a class) is a function that could be called without any instance. Note that static member function could only access static member variables, which means it cannot access normal member variable, nor can it access normal member function. [(ref)](http://kamory0931.pixnet.net/blog/post/119201381)
 
 Example:
 ``` c++
