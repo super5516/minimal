@@ -3,6 +3,7 @@ layout: post
 title: "Notes on C++ - static variable and static function"
 date: 2017-12-26 20:00 +0800
 categories:
+tags: c++
 ---
 
 Static variable is a variable like global variable, except that it can only be accessed within the proper scope.

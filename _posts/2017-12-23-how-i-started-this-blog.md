@@ -3,6 +3,7 @@ layout: post
 title: "How I Started This Blog"
 date: 2017-12-23 12:00 +0800
 categories:
+tags: win10 wls github-page jekyll nokogiri
 ---
 Building a blog using Jekyll on GitHub Pages with Windows 10 Subsystem for Linux
 

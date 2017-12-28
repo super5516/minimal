@@ -3,6 +3,7 @@ layout: post
 title: "Notes on C++ - Constant Variable and Constant Function"
 date: 2017-12-27 22:00 +0800
 categories:
+tags: c++
 ---
 
 [(ref1)](https://scriptjerks.blogspot.tw/2012/07/cconst.html)
