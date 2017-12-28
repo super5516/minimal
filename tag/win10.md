@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: C++"
-tag: c++
+title: "Tag: Windows 10"
+tag: win10
 ---
