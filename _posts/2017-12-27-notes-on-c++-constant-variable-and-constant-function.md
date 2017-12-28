@@ -6,10 +6,6 @@ categories:
 tags: c++
 ---
 
-
-[(ref1)](https://scriptjerks.blogspot.tw/2012/07/cconst.html)
-[(ref2)](http://blog.xuite.net/tsai.oktomy/program/65131235-const+%E6%94%BE%E7%BD%AE%E4%BD%8D%E7%BD%AE%E7%9A%84%E6%84%8F%E7%BE%A9)
-
 Constant variable has the characteristic that once it's initialized, its value cannot be changed.
 
 Example:
@@ -55,3 +51,7 @@ int main (void) {
 
 Then, only the member functions and variables that are also constant could be accessed by that instance. In other words, you cannot modify anything using that instance.
 Finally, if a member variable of a class is declared as constant, then it could only be initialized by the constructor.
+
+This post is finished with the help of these 2 references 
+[Ref1](https://scriptjerks.blogspot.tw/2012/07/cconst.html),
+[Ref2](http://blog.xuite.net/tsai.oktomy/program/65131235-const+%E6%94%BE%E7%BD%AE%E4%BD%8D%E7%BD%AE%E7%9A%84%E6%84%8F%E7%BE%A9)
