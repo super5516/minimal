@@ -10,8 +10,8 @@ When it comes to setting height or width of a HTML element, you might use someth
 
 ``` css
 .sample {
-height: 100px;
-width: 85%;
+  height: 100px;
+  width: 85%;
 }
 ```
 
@@ -22,7 +22,7 @@ If your element do not change according to different screen sizes, then a fixed 
 
 ``` css
 .sample {
-height: 90vh; /* set the height to 90% of the screen height */
-width: 50vw; /* set the width to 50% of the screen width */
+  height: 90vh; /* set the height to 90% of the screen height */
+  width: 50vw; /* set the width to 50% of the screen width */
 }
 ```
