@@ -12,16 +12,21 @@ There are some way of writing a constructor, depends on your need.
 
     ``` c++
     class Point {
-    public:
-      Point();
-    }
+    
+	}
 
     int main (void) {
       Point p; // an instance of class Point is created
     }
     ```
+	The compiler will automatically declare and define the constructor if you did't manually declare and define it. We could also declare and define it by ourselves.
 
-    This is the basic constructor, which would create an instance when declared.
+	``` c++
+	class Point {
+	public:
+	  Point() {}; // a simple, user-declared and -defined constructor
+	}
+	```
 
 2. With Declaration
 
@@ -38,6 +43,8 @@ There are some way of writing a constructor, depends on your need.
       Point p;
     }
     ```
+	
+	Note that when using the one-line function, even if you don't want to do anything inside the constructor, the curly brackets (or braces) ```Point() {};``` cannot be omitted.
 
     ``` c++
     class Point {
