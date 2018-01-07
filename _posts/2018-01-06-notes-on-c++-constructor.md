@@ -13,7 +13,7 @@ There are some way of writing a constructor, depends on your need.
     ``` c++
     class Point {
     
-	}
+	};
 
     int main (void) {
       Point p; // an instance of class Point is created
@@ -25,7 +25,7 @@ There are some way of writing a constructor, depends on your need.
 	class Point {
 	public:
 	  Point() {}; // a simple, user-declared and -defined constructor
-	}
+	};
 	```
 
 2. With Declaration
@@ -37,7 +37,7 @@ There are some way of writing a constructor, depends on your need.
     public:
       // this is an one-line function
       Point() { cout << "I'm the constructor" << endl; };
-    }
+    };
 
     int main (void) {
       Point p;
@@ -50,7 +50,7 @@ There are some way of writing a constructor, depends on your need.
     class Point {
     public:
       Point();
-    }
+    };
 
     // this is a full declaration function
     Point::Point() {
@@ -74,7 +74,7 @@ There are some way of writing a constructor, depends on your need.
       int x;
     public:
       Point(int val);
-    }
+    };
 
     Point::Point(int val) {
       x = val;
@@ -93,7 +93,7 @@ There are some way of writing a constructor, depends on your need.
 	  int x;
 	public:
 	  Point(int x);
-	}
+	};
 
 	Point::Point(int x) {
 	  this->x = x;
@@ -108,7 +108,7 @@ There are some way of writing a constructor, depends on your need.
 	  int x;
 	public:
 	  Point(int);
-	}
+	};
 	```
 4. With Initialization
 
@@ -124,7 +124,7 @@ There are some way of writing a constructor, depends on your need.
 	  // the above line equals to the following 2 lines
 	  // x = val1;
 	  // y = val2;
-	}
+	};
 	```
 
 	Of course you could write it like this
@@ -136,7 +136,7 @@ There are some way of writing a constructor, depends on your need.
 	  int y;
 	public:
 	  Point(int, int);
-	}
+	};
 
 	Point::Point (int x, int y) : x(x), y(y) {
 	  // do something
