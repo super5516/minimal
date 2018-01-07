@@ -11,7 +11,7 @@ Assume you have the following code
 ``` c++
 class Foo {
   // something here
-}
+};
 
 int main (void) {
   Foo foo1;
@@ -26,7 +26,7 @@ class Foo {
 public:
   Foo(const Foo&) = delete; // disable Foo foo3 = foo1;
   Foo& operator=(const Foo&) = delete; // disable foo2 = foo1;
-}
+};
 ```
 
 Then ```foo2 = foo1;``` or ```Foo foo3 = foo1;``` would result in compile error.
@@ -39,11 +39,11 @@ class BaseFoo {
 public:
   BaseFoo(const BaseFoo&) = delete;
   BaseFoo& operator=(const BaseFoo&) = delete;
-}
+};
 
 class DerivedFoo : public BaseFoo {
  // something here
-}
+};
 
 int main (void) {
   BaseFoo b_foo1;
