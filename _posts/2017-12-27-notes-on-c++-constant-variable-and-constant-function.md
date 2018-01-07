@@ -38,12 +38,12 @@ If you create a class instance as constant as follow:
 ``` c++
 class Student {
 public:
-  void func1();
-  void func2() const;
+  void func1() {};
+  void func2() const {};
 };
 
 int main (void) {
-  Student s1;
+  const Student s1;
   s1.func1(); // compile error
   s1.func2(); // this is ok
 }
