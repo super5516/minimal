@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Notes on C++ -- Virtual Function"
+title: "Notes on C++ - Virtual Function"
 date: 2018-01-15 1800 +0800
 categories:
 tags: c++
