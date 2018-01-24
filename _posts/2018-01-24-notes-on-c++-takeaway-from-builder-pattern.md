@@ -6,7 +6,7 @@ categories:
 tags: c++
 ---
 
-Recently, I've been taking an online course about the design pattern, and the Builder Pattern is the first pattern I learned. Here are some takeaways I got.
+Recently, I've been taking an online course about the design pattern, and the Builder Pattern is the first pattern I learned. Here are some takeaways I've got.
 
 The purpose of Builder Pattern is to make it easier to construct a complicated object. Let's say we have a class like the following.
 ``` c++
@@ -30,7 +30,7 @@ public:
     p = Person(); // initialize an instance of person
   }
   PersonBuilder& named(const string& first_name, const string& last_name) {
-    p.setFirstName(first_name); // remember to make the getters
+    p.setFirstName(first_name); // remember to make the setters
     p.setLastName(last_name);
     return *this;
   }
